@@ -21,7 +21,6 @@ Maintained by **Ma-s-on** — I'll keep it up as long as I feel like it, and it'
    pip install -r requirements.txt
    ```
 3. (Optional) For best text rendering, put a monospace font (like `DejaVuSansMono.ttf`) in the script folder.
-
 ## Usage
 **Wizard mode (recommended):**
 ```sh
@@ -54,7 +53,8 @@ python github_contribution_generator.py --help
 
 ## License
 MIT
-
+---
+![ineedajob](https://github.com/user-attachments/assets/e35f19b5-d597-4af2-bdb0-14ce50109d36)
 ---
 
 If you like it, use it. If you break it, you get to keep both pieces. Enjoy
