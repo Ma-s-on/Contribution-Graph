@@ -412,6 +412,7 @@ class ContributionGenerator:
                             image_path=None, text=None, template=None):
         """Create git repository and commits"""
         global GITHUB_PAT
+        prev_cwd = os.getcwd()
         try:
             os.chdir(temp_dir)
             
@@ -499,6 +500,8 @@ Total commits: {len(commit_dates)}
             print(f"❌ Git operation failed: {e}\nPlease check your Git configuration and try again.")
         except Exception as e:
             print(f"❌ Error: {e}\nIf you need help, please check the documentation or ask for support.")
+        finally:
+            os.chdir(prev_cwd)
 
     def import_templates(self, json_path):
         try:
